@@ -346,6 +346,10 @@
       font-size: 0.9rem; color: var(--cream); flex: 1;
       font-weight: 400;
     }
+    .menu-item-price {
+      font-size: 0.78rem; color: var(--gold); font-weight: 500;
+      flex-shrink: 0; text-align: right; opacity: 0.85;
+    }
 
     /* ══════════════════════════════════════════════════════════
        5. FAN FAVOURITES
@@ -635,69 +639,144 @@
     <div class="reveal">
       <div class="menu-tabs-wrap">
         <div class="menu-tabs" role="tablist">
-          <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="jiaozi">Jiao Zi</button>
-          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="ramen">Suppentopf</button>
+          <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="nudeln">Nudeln</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="sushi">Sushi &amp; Maki</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="sashimi">Sashimi</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="maki">Maki</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="salat">Salat</button>
           <button class="tab-btn"        role="tab" aria-selected="false" data-tab="vorspeise">Vorspeise</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="jiaozi">Jiao Zi</button>
           <button class="tab-btn"        role="tab" aria-selected="false" data-tab="dimsum">Dim Sum</button>
-          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="bento">Bento Box</button>
           <button class="tab-btn"        role="tab" aria-selected="false" data-tab="spezial">Spezialitäten</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="ramen">Suppentopf</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="bento">Bento Box</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="nachspeise">Nachspeise</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="getraenke">Getränke</button>
         </div>
       </div>
 
-      <!-- JIAO ZI -->
-      <div class="tab-panel active" id="tab-jiaozi" role="tabpanel">
-        <p class="tab-intro">Hausgemachte Jiao Zi — 12 Stück</p>
+      <!-- GEBRATENE NUDELN -->
+      <div class="tab-panel active" id="tab-nudeln" role="tabpanel">
+        <p class="tab-intro">Gebratene Nudeln</p>
         <div class="menu-list">
-          <div class="menu-row"><span class="menu-item-code">T1</span><span class="menu-item-name">Schweinefleisch &amp; Chinakohl</span></div>
-          <div class="menu-row"><span class="menu-item-code">T2</span><span class="menu-item-name">Schweinefleisch &amp; Bärlauch</span></div>
-          <div class="menu-row"><span class="menu-item-code">T3</span><span class="menu-item-name">Hühnerfleisch &amp; Chinakohl</span></div>
-          <div class="menu-row"><span class="menu-item-code">T4</span><span class="menu-item-name">Hühnerfleisch &amp; Bärlauch</span></div>
-          <div class="menu-row"><span class="menu-item-code">T5</span><span class="menu-item-name">Hühnerfleisch &amp; Spinat</span></div>
-          <div class="menu-row"><span class="menu-item-code">T6</span><span class="menu-item-name">Hühnerfleisch &amp; Karotten</span></div>
-          <div class="menu-row"><span class="menu-item-code">T7</span><span class="menu-item-name">Garnelen &amp; Bärlauch</span></div>
-          <div class="menu-row"><span class="menu-item-code">T8</span><span class="menu-item-name">Garnelen, Bambussprossen &amp; Chinakohl</span></div>
-          <div class="menu-row"><span class="menu-item-code">T9</span><span class="menu-item-name">Shiitake Pilz, Tofu &amp; Chinakohl</span></div>
-          <div class="menu-row"><span class="menu-item-code">T10</span><span class="menu-item-name">Glasnudeln, Bärlauch, Karotten &amp; Eier</span></div>
-          <div class="menu-row"><span class="menu-item-code">T11</span><span class="menu-item-name">Gemischt Klein</span></div>
-          <div class="menu-row"><span class="menu-item-code">T12</span><span class="menu-item-name">Gemischt Groß (18 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">T13</span><span class="menu-item-name">Xiaolongbao (12 Stk.)</span></div>
+          <div class="menu-row"><span class="menu-item-code">N1</span><span class="menu-item-name">Gemüse mit Nudeln</span><span class="menu-item-price">€5,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N2</span><span class="menu-item-name">Hühnerfleisch mit Nudeln</span><span class="menu-item-price">€6,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N3</span><span class="menu-item-name">Tofu mit Nudeln</span><span class="menu-item-price">€6,00 / Reis €7,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N4</span><span class="menu-item-name">Knusp. Ente mit Nudeln</span><span class="menu-item-price">€7,50 / Reis €7,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N5</span><span class="menu-item-name">Knusp. Huhn auf Nudeln</span><span class="menu-item-price">€6,50 / Reis €6,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N6</span><span class="menu-item-name">Rindfleisch mit Nudeln</span><span class="menu-item-price">€7,50 / Reis €9,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N7</span><span class="menu-item-name">Garnelen mit Nudeln</span><span class="menu-item-price">€7,50 / Reis €9,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N8</span><span class="menu-item-name">Lachs mit Nudeln</span><span class="menu-item-price">€7,50 / Reis €7,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N9</span><span class="menu-item-name">Gebratenes Hühnerfleisch auf Reis</span><span class="menu-item-price">€6,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N10</span><span class="menu-item-name">Bulgogi mit Nudeln</span><span class="menu-item-price">€8,00 / Reis €9,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N11</span><span class="menu-item-name">Sesam Chicken auf Reis</span><span class="menu-item-price">€7,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">N12</span><span class="menu-item-name">Tempura Garnelen mit Nudeln</span><span class="menu-item-price">€7,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N13</span><span class="menu-item-name">Toridon auf Reis mit Teriyaki Sauce</span><span class="menu-item-price">€6,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N14</span><span class="menu-item-name">Hühnerfleisch süss sauer mit Reis</span><span class="menu-item-price">€6,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N15</span><span class="menu-item-name">Eierreis mit Hühnerfleisch</span><span class="menu-item-price">€7,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N15a</span><span class="menu-item-name">Eierreis mit Gemüse</span><span class="menu-item-price">€6,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">N16</span><span class="menu-item-name">Gebr. Nudeln mit mini Frühlingsrollen</span></div>
         </div>
       </div>
 
-      <!-- RAMEN -->
-      <div class="tab-panel" id="tab-ramen" role="tabpanel">
-        <p class="tab-intro">Suppentopf — Ramen oder Udon</p>
+      <!-- SUSHI & MAKI -->
+      <div class="tab-panel" id="tab-sushi" role="tabpanel">
+        <p class="tab-intro">Sushi &amp; Maki Sets</p>
         <div class="menu-list">
-          <div class="menu-row"><span class="menu-item-code">R1</span><span class="menu-item-name">Gemüse Ramen / Udon</span></div>
-          <div class="menu-row"><span class="menu-item-code">R2</span><span class="menu-item-name">Seafood Ramen / Udon</span></div>
-          <div class="menu-row"><span class="menu-item-code">R3</span><span class="menu-item-name">Chicken Ramen / Udon</span></div>
-          <div class="menu-row"><span class="menu-item-code">R4</span><span class="menu-item-name">Ramen / Udon mit Ente</span></div>
-          <div class="menu-row"><span class="menu-item-code">R5</span><span class="menu-item-name">Wantan Suppentopf mit Gemüse</span></div>
-          <div class="menu-row"><span class="menu-item-code">R6</span><span class="menu-item-name">Beef Ramen / Udon</span></div>
+          <div class="menu-row"><span class="menu-item-code">S1</span><span class="menu-item-name">Sushi</span><span class="menu-item-price">kl. €8,00 / mi. €9,50 / gr. €11,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S2</span><span class="menu-item-name">Sake Sushi (nur Lachs)</span><span class="menu-item-price">kl. €9,50 / gr. €11,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S3</span><span class="menu-item-name">Sake Maguro</span><span class="menu-item-price">kl. €10,50 / gr. €11,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">S4</span><span class="menu-item-name">Unagi Sushi Set</span><span class="menu-item-price">8 Stk. €11,00 / 10 Stk. €12,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S5</span><span class="menu-item-name">Ebi Sushi Set</span><span class="menu-item-price">8 Stk. €9,50 / 10 Stk. €11,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S6</span><span class="menu-item-name">Kani Sushi</span><span class="menu-item-price">8 Stk. €9,50 / 10 Stk. €11,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S7</span><span class="menu-item-name">Damen Teller — 8 California, 3 Gurken, 3 Lachs Maki, 2 Lachs, 2 Thunfisch, 2 Heilbutt</span><span class="menu-item-price">€15,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S8</span><span class="menu-item-name">Herren Teller — 5 Futo, 3 Lachs Maki, 2 Lachs, 2 Garnelen, 2 Thunfisch</span><span class="menu-item-price">€15,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">S9</span><span class="menu-item-name">Sushi Platte für 2 Personen</span><span class="menu-item-price">€36,00</span></div>
+        </div>
+      </div>
+
+      <!-- SASHIMI -->
+      <div class="tab-panel" id="tab-sashimi" role="tabpanel">
+        <p class="tab-intro">Sashimi</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">S12</span><span class="menu-item-name">Lachs Sashimi mini (6 Scheiben)</span><span class="menu-item-price">€9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">S13</span><span class="menu-item-name">Lachs Sashimi klein (12 Scheiben)</span><span class="menu-item-price">€15,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">S14</span><span class="menu-item-name">Lachs Sashimi groß (18 Scheiben)</span><span class="menu-item-price">€20,00</span></div>
+        </div>
+      </div>
+
+      <!-- MAKI -->
+      <div class="tab-panel" id="tab-maki" role="tabpanel">
+        <p class="tab-intro">Maki</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">M1</span><span class="menu-item-name">Gurken Maki</span><span class="menu-item-price">6 Stk. €2,50 / 12 €4,50 / 18 €6,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M2</span><span class="menu-item-name">Lachs Maki</span><span class="menu-item-price">6 Stk. €3,50 / 12 €6,00 / 18 €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M3</span><span class="menu-item-name">Avocado Maki</span><span class="menu-item-price">6 Stk. €4,50 / 12 €6,50 / 18 €9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M4</span><span class="menu-item-name">California Maki</span><span class="menu-item-price">8 Stk. €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M5</span><span class="menu-item-name">Tempura Maki</span><span class="menu-item-price">8 Stk. €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M6</span><span class="menu-item-name">Maki Mix</span><span class="menu-item-price">12 Stk. €6,00 / 18 €7,50 / 24 €9,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">M7</span><span class="menu-item-name">Philadelphia Maki</span><span class="menu-item-price">8 Stk. €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M8</span><span class="menu-item-name">Rainbow Roll</span><span class="menu-item-price">8 Stk. €10,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">M9</span><span class="menu-item-name">Lachs Avocado Maki</span><span class="menu-item-price">6 Stk. €5,50 / 12 €9,50 / 18 €13,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M10</span><span class="menu-item-name">Avo-Chicken Maki</span><span class="menu-item-price">8 Stk. €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M11</span><span class="menu-item-name">Avo-Ente Maki</span><span class="menu-item-price">8 Stk. €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M12</span><span class="menu-item-name">Avocado Mango Maki</span><span class="menu-item-price">8 Stk. €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M13</span><span class="menu-item-name">Sake Tempura Maki</span><span class="menu-item-price">6 Stk. €6,00 / 12 €10,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M14</span><span class="menu-item-name">Futo Maki</span><span class="menu-item-price">5 Stk. €6,00 / 10 €10,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">M15</span><span class="menu-item-name">Thunfisch Maki</span><span class="menu-item-price">6 Stk. €3,50 / 12 €6,00 / 18 €8,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M16</span><span class="menu-item-name">Sake California Maki</span><span class="menu-item-price">6 Stk. €6,00 / 12 €10,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">M17</span><span class="menu-item-name">Oshinko Maki</span><span class="menu-item-price">6 Stk. €2,50 / 12 €4,50 / 18 €6,50</span></div>
+        </div>
+      </div>
+
+      <!-- SALAT -->
+      <div class="tab-panel" id="tab-salat" role="tabpanel">
+        <p class="tab-intro">Salat</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">V20</span><span class="menu-item-name">Gurken Salat</span><span class="menu-item-price">€4,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V21</span><span class="menu-item-name">Wakame Salat</span><span class="menu-item-price">€4,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V22</span><span class="menu-item-name">Avocado-Mango Salat</span><span class="menu-item-price">€6,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">V23</span><span class="menu-item-name">Haus Salat</span><span class="menu-item-price">€3,20</span></div>
+          <div class="menu-row"><span class="menu-item-code">V24</span><span class="menu-item-name">Pikanter Salat</span><span class="menu-item-price">€3,20</span></div>
+          <div class="menu-row"><span class="menu-item-code">V25</span><span class="menu-item-name">Kimchi</span><span class="menu-item-price">€4,50</span></div>
         </div>
       </div>
 
       <!-- VORSPEISE -->
       <div class="tab-panel" id="tab-vorspeise" role="tabpanel">
-        <p class="tab-intro">Vorspeise &amp; Salat</p>
+        <p class="tab-intro">Vorspeise</p>
         <div class="menu-list">
-          <div class="menu-row"><span class="menu-item-code">V1</span><span class="menu-item-name">Miso Suppe</span></div>
-          <div class="menu-row"><span class="menu-item-code">V2</span><span class="menu-item-name">Pikant-säuerliche Suppe</span></div>
-          <div class="menu-row"><span class="menu-item-code">V3</span><span class="menu-item-name">Tom Yam Gong Suppe</span></div>
-          <div class="menu-row"><span class="menu-item-code">V4</span><span class="menu-item-name">Tom Kai Gai</span></div>
-          <div class="menu-row"><span class="menu-item-code">V5</span><span class="menu-item-name">Mini Frühlingsrolle (6 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">V6</span><span class="menu-item-name">Hummerchips</span></div>
-          <div class="menu-row"><span class="menu-item-code">V7</span><span class="menu-item-name">Tempura Garnelen (5 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">V8</span><span class="menu-item-name">Geb. Tintenfischringe (5 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">V9</span><span class="menu-item-name">Crispy Chicken Wings (5 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">V10</span><span class="menu-item-name">Gebackene Wan Tan (8 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">V11</span><span class="menu-item-name">Pommes (klein / groß)</span></div>
-          <div class="menu-row"><span class="menu-item-code">V20</span><span class="menu-item-name">Gurken Salat</span></div>
-          <div class="menu-row"><span class="menu-item-code">V21</span><span class="menu-item-name">Wakame Salat</span></div>
-          <div class="menu-row"><span class="menu-item-code">V22</span><span class="menu-item-name">Avocado-Mango Salat</span></div>
-          <div class="menu-row"><span class="menu-item-code">V23</span><span class="menu-item-name">Haus Salat</span></div>
-          <div class="menu-row"><span class="menu-item-code">V24</span><span class="menu-item-name">Pikanter Salat</span></div>
-          <div class="menu-row"><span class="menu-item-code">V25</span><span class="menu-item-name">Kimchi Salat</span></div>
+          <div class="menu-row"><span class="menu-item-code">V1</span><span class="menu-item-name">Miso Suppe</span><span class="menu-item-price">€2,80</span></div>
+          <div class="menu-row"><span class="menu-item-code">V2</span><span class="menu-item-name">Pikant-säuerliche Suppe</span><span class="menu-item-price">€2,80</span></div>
+          <div class="menu-row"><span class="menu-item-code">V3</span><span class="menu-item-name">Tom Yam Gong Suppe</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V4</span><span class="menu-item-name">Tom Kai Gai</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V5</span><span class="menu-item-name">Mini Frühlingsrolle (6 Stk.)</span><span class="menu-item-price">€2,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V6</span><span class="menu-item-name">Hummerchips</span><span class="menu-item-price">€2,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V7</span><span class="menu-item-name">Tempura Garnelen (5 Stk.)</span><span class="menu-item-price">€5,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">V8</span><span class="menu-item-name">Geb. Chicken Gyoza (5 Stk.)</span><span class="menu-item-price">€5,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">V9</span><span class="menu-item-name">Crispy Chicken Wings (5 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V10</span><span class="menu-item-name">Gebackene Wan Tan (8 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">V11</span><span class="menu-item-name">Hongkong Chicken Roll (4 Stk.)</span><span class="menu-item-price">€5,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">V12</span><span class="menu-item-name">Edamame</span><span class="menu-item-price">€5,50</span></div>
+        </div>
+      </div>
+
+      <!-- JIAO ZI -->
+      <div class="tab-panel" id="tab-jiaozi" role="tabpanel">
+        <p class="tab-intro">Hausgemachte Jiao Zi — 12 Stück</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">T1</span><span class="menu-item-name">Schweinefleisch &amp; Chinakohl</span><span class="menu-item-price">€9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T2</span><span class="menu-item-name">Schweinefleisch &amp; Bärlauch</span><span class="menu-item-price">€9,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">T3</span><span class="menu-item-name">Hühnerfleisch &amp; Chinakohl</span><span class="menu-item-price">€9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T4</span><span class="menu-item-name">Hühnerfleisch &amp; Bärlauch</span><span class="menu-item-price">€9,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">T5</span><span class="menu-item-name">Hühnerfleisch &amp; Spinat</span><span class="menu-item-price">€9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T6</span><span class="menu-item-name">Hühnerfleisch &amp; Karotten</span><span class="menu-item-price">€9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T7</span><span class="menu-item-name">Garnelen &amp; Bärlauch</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">T8</span><span class="menu-item-name">Garnelen, Bambusprossen &amp; Chinakohl</span><span class="menu-item-price">€10,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T9</span><span class="menu-item-name">Shiitake Pilz, Tofu &amp; Chinakohl</span><span class="menu-item-price">€9,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">T10</span><span class="menu-item-name">Glasnudeln, Bärlauch, Karotten &amp; Eier</span><span class="menu-item-price">€9,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">T11</span><span class="menu-item-name">Gemischt Klein</span><span class="menu-item-price">€10,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T12</span><span class="menu-item-name">Gemischt Groß (18 Stk.)</span><span class="menu-item-price">€13,50</span></div>
         </div>
       </div>
 
@@ -705,43 +784,100 @@
       <div class="tab-panel" id="tab-dimsum" role="tabpanel">
         <p class="tab-intro">Dim Sum</p>
         <div class="menu-list">
-          <div class="menu-row"><span class="menu-item-code">T20</span><span class="menu-item-name">Gedämpfte Garnelen Dim Sum</span></div>
-          <div class="menu-row"><span class="menu-item-code">T21</span><span class="menu-item-name">Gedämpfte Bärlauch Dim Sum mit Shrimps</span></div>
-          <div class="menu-row"><span class="menu-item-code">T22</span><span class="menu-item-name">Shao Mai mit Garnelen</span></div>
-        </div>
-      </div>
-
-      <!-- BENTO -->
-      <div class="tab-panel" id="tab-bento" role="tabpanel">
-        <p class="tab-intro">Bento Box — mit Reis, Suppe &amp; Mini-Frühlingsrolle</p>
-        <div class="menu-list">
-          <div class="menu-row"><span class="menu-item-code">B1</span><span class="menu-item-name">Lachs Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B2</span><span class="menu-item-name">Bulgogi Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B3</span><span class="menu-item-name">Sushi / Maki Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B4</span><span class="menu-item-name">Tori Don Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B5</span><span class="menu-item-name">Vegi Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B6</span><span class="menu-item-name">Ente Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B7</span><span class="menu-item-name">Eierreis / Nudeln Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B8</span><span class="menu-item-name">Knusprige Chicken Bento</span></div>
-          <div class="menu-row"><span class="menu-item-code">B9</span><span class="menu-item-name">Hühnerfleisch Chop-Suey Bento</span></div>
+          <div class="menu-row"><span class="menu-item-code">T20</span><span class="menu-item-name">Gedämpfte Garnelen Dim Sum (4 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T21</span><span class="menu-item-name">Gedämpfte Bärlauch Dim Sum mit Shrimps (4 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T22</span><span class="menu-item-name">Shao Mai mit Garnelen (4 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T23</span><span class="menu-item-name">Gedämpftes Brötchen mit Ei und Vanilla, süß (2 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T24</span><span class="menu-item-name">Germteig Tasche mit gegrilltem Schweinefleisch (2 Stk.)</span><span class="menu-item-price">€5,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">T25</span><span class="menu-item-name">Germteig Tasche mit Gemüse (2 Stk.)</span><span class="menu-item-price">€5,50</span></div>
         </div>
       </div>
 
       <!-- SPEZIALITÄTEN -->
       <div class="tab-panel" id="tab-spezial" role="tabpanel">
-        <p class="tab-intro">Spezialitäten &amp; Nachspeise</p>
+        <p class="tab-intro">Spezialitäten — mit Reis</p>
         <div class="menu-list">
-          <div class="menu-row"><span class="menu-item-code">A1</span><span class="menu-item-name">Lemongrass Chili Beef</span></div>
-          <div class="menu-row"><span class="menu-item-code">A2</span><span class="menu-item-name">Hühnerfleisch Chop Suey</span></div>
-          <div class="menu-row"><span class="menu-item-code">A3</span><span class="menu-item-name">Red Curry Chicken</span></div>
-          <div class="menu-row"><span class="menu-item-code">A4</span><span class="menu-item-name">Thai Prawns Curry</span></div>
-          <div class="menu-row"><span class="menu-item-code">A5</span><span class="menu-item-name">Schwarzer Pfeffer Rindfleisch</span></div>
-          <div class="menu-row"><span class="menu-item-code">A6</span><span class="menu-item-name">Gan Bian Rindfleisch</span></div>
-          <div class="menu-row"><span class="menu-item-code">A7</span><span class="menu-item-name">Gan Bian Hühnerfleisch</span></div>
-          <div class="menu-row"><span class="menu-item-code">D1</span><span class="menu-item-name">Sesam Bällchen (6 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">D2</span><span class="menu-item-name">Gebackene Bananen (6 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">D3</span><span class="menu-item-name">Mochi (2 Stk.)</span></div>
-          <div class="menu-row"><span class="menu-item-code">D4</span><span class="menu-item-name">Pudding</span></div>
+          <div class="menu-row"><span class="menu-item-code">A1</span><span class="menu-item-name">Lemongrass Chili Beef</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A2</span><span class="menu-item-name">Hühnerfleisch Chop-Suey</span><span class="menu-item-price">€9,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A3</span><span class="menu-item-name">Red Curry Chicken</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A4</span><span class="menu-item-name">Thai Prawns Curry</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">A5</span><span class="menu-item-name">Schwarzer Pfeffer Rindfleisch</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A6</span><span class="menu-item-name">Gan Bian Rindfleisch</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">A7</span><span class="menu-item-name">Gan Bian Hühnerfleisch</span><span class="menu-item-price">€11,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">A8</span><span class="menu-item-name">Lemongrass Chili Chicken</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A9</span><span class="menu-item-name">Hühnerfleisch Szechuan</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A10</span><span class="menu-item-name">Gongbao Chicken</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A11</span><span class="menu-item-name">Knusprige Hühnerfleisch auf Wok Gemüse</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A12</span><span class="menu-item-name">Cashew Chicken mit Wok Gemüse</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A13</span><span class="menu-item-name">Mango Chicken mit Wok Gemüse</span><span class="menu-item-price">€10,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A14</span><span class="menu-item-name">Red Curry Duck</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A15</span><span class="menu-item-name">Knusprige Ente auf Wok Gemüse</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A16</span><span class="menu-item-name">Mango Duck</span><span class="menu-item-price">€12,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A17</span><span class="menu-item-name">Red Curry Beef</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A18</span><span class="menu-item-name">Bulgogi Beef mit Gemüse</span><span class="menu-item-price">€13,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">A19</span><span class="menu-item-name">Rindfleisch Szechuan</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A20</span><span class="menu-item-name">Rindfleisch mit Zwiebeln</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A21</span><span class="menu-item-name">Acht Schätze</span><span class="menu-item-price">€11,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A22</span><span class="menu-item-name">Lachs Teriyaki mit Gemüse</span><span class="menu-item-price">€12,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A23</span><span class="menu-item-name">Ente Acht Schätze</span><span class="menu-item-price">€13,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A24</span><span class="menu-item-name">Red Curry Tofu mit Gemüse</span><span class="menu-item-price">€10,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">A25</span><span class="menu-item-name">Wok Tofu mit Gemüse</span><span class="menu-item-price">€9,90</span></div>
+          <div class="menu-row"><span class="menu-item-code">A26</span><span class="menu-item-name">Wok Pak Choi</span><span class="menu-item-price">€9,90</span></div>
+        </div>
+      </div>
+
+      <!-- SUPPENTOPF -->
+      <div class="tab-panel" id="tab-ramen" role="tabpanel">
+        <p class="tab-intro">Suppentopf — Ramen oder Udon</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">R1</span><span class="menu-item-name">Gemüse Ramen / Udon</span><span class="menu-item-price">€9,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">R2</span><span class="menu-item-name">Seafood Ramen / Udon</span><span class="menu-item-price">€12,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">R3</span><span class="menu-item-name">Chicken Ramen / Udon</span><span class="menu-item-price">€11,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">R4</span><span class="menu-item-name">Ramen / Udon mit Ente</span><span class="menu-item-price">€12,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">R5</span><span class="menu-item-name">Wantan Suppentopf mit Gemüse</span><span class="menu-item-price">€11,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">R6</span><span class="menu-item-name">Beef Ramen / Udon</span><span class="menu-item-price">€12,00</span></div>
+        </div>
+      </div>
+
+      <!-- BENTO -->
+      <div class="tab-panel" id="tab-bento" role="tabpanel">
+        <p class="tab-intro">Bento Box — mit Reis und Suppe oder Mini-Frühlingsrolle</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">B1</span><span class="menu-item-name">Lachs Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B2</span><span class="menu-item-name">Bulgogi Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B3</span><span class="menu-item-name">Sushi Maki Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B4</span><span class="menu-item-name">Tori Don Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B5</span><span class="menu-item-name">Vegi Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B6</span><span class="menu-item-name">Ente Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B7</span><span class="menu-item-name">Knusprige Chicken Bento</span><span class="menu-item-price">€12,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">B8</span><span class="menu-item-name">Hühnerfleisch Chop Suey Bento</span><span class="menu-item-price">€12,50</span></div>
+        </div>
+      </div>
+
+      <!-- NACHSPEISE -->
+      <div class="tab-panel" id="tab-nachspeise" role="tabpanel">
+        <p class="tab-intro">Nachspeise</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">D1</span><span class="menu-item-name">Sesam Bällchen (6 Stk.)</span><span class="menu-item-price">€5,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">D2</span><span class="menu-item-name">Gebackene Bananen (6 Stk.)</span><span class="menu-item-price">€4,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">D3</span><span class="menu-item-name">Mochi mit roter Bohnenpaste oder Erdnüssen (2 Stk.)</span><span class="menu-item-price">€2,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">D4</span><span class="menu-item-name">Pudding mit Mango oder Lychee (2 Stk.)</span><span class="menu-item-price">€3,00</span></div>
+        </div>
+      </div>
+
+      <!-- GETRÄNKE -->
+      <div class="tab-panel" id="tab-getraenke" role="tabpanel">
+        <p class="tab-intro">Getränke</p>
+        <div class="menu-list">
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Tee (Grüner Tee / Jasmin Tee)</span><span class="menu-item-price">€3,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Cola, Cola Zero, Fanta, Eistee, Pepsi — Dose 0,33L</span><span class="menu-item-price">€2,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Aloe Vera 0,33L</span><span class="menu-item-price">€3,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Cola, Cola light, Cola Zero, Fanta, Sprite, Eis Tee, Mineralwasser, Emotion, Almdudler, Bravo, Apfelsaft gespritzt — Fl. 0,5L</span><span class="menu-item-price">€2,80</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Arizona 0,5L</span><span class="menu-item-price">€3,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Bier Dose — Ottakringer / Qingdao / Gösser / Wieselburger 0,5L</span><span class="menu-item-price">€2,50</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Mangosaft / Lycheesaft 0,35L</span><span class="menu-item-price">€3,00</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Monster 0,5L</span><span class="menu-item-price">€2,80</span></div>
+          <div class="menu-row"><span class="menu-item-code">·</span><span class="menu-item-name">Red Bull 0,25L</span><span class="menu-item-price">€2,80</span></div>
         </div>
       </div>
     </div><!-- /reveal -->
