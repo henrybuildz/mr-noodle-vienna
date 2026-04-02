@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +30,42 @@
       --font-body: 'Josefin Sans', sans-serif;
       --ease:      cubic-bezier(0.25,0.46,0.45,0.94);
     }
+
+    /* ── Light mode overrides ────────────────────────────────── */
+    [data-theme="light"] {
+      --bg:        #faf6f0;
+      --bg-mid:    #f3ece0;
+      --bg-card:   #ffffff;
+      --bg-card2:  #f7f2ea;
+      --red:       #b00000;
+      --red-lt:    #cc0000;
+      --red2:      #c42800;
+      --gold:      #8b6800;
+      --gold-lt:   #a07800;
+      --gold-dim:  rgba(139,104,0,0.10);
+      --cream:     #1a1a1a;
+      --cream-60:  rgba(26,26,26,0.65);
+      --cream-30:  rgba(26,26,26,0.38);
+      --cream-10:  rgba(26,26,26,0.06);
+      --rule:      rgba(26,26,26,0.10);
+    }
+    [data-theme="light"] #hero { background: linear-gradient(150deg, #fdf8f0 0%, #f5ebe0 50%, #f0e4d0 100%); }
+    [data-theme="light"] #navbar.scrolled { background: rgba(250,246,240,0.97); }
+    [data-theme="light"] .mobile-nav { background: var(--bg); }
+    [data-theme="light"] .hero-kanji { color: rgba(180,32,0,0.06); }
+    [data-theme="light"] #footer { background: var(--bg-mid); }
+
+    /* ── Theme toggle ────────────────────────────────────────── */
+    .theme-btn {
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 1px solid var(--rule);
+      color: var(--cream-60);
+      font-size: 0.9rem; line-height: 1;
+      transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+      flex-shrink: 0;
+    }
+    .theme-btn:hover { border-color: var(--cream-30); color: var(--cream); }
 
     /* ── Reset ───────────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -675,6 +711,7 @@
       <li><a href="#visit">Find Us</a></li>
       <li><a href="#menu" class="nav-cta">View Menu</a></li>
     </ul>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -1242,6 +1279,21 @@
   } else {
     els.forEach(el => el.classList.add('in'));
   }
+
+  /* Theme toggle */
+  const themeBtn = document.getElementById('themeBtn');
+  const html = document.documentElement;
+  const saved = localStorage.getItem('mnTheme');
+  if (saved) {
+    html.setAttribute('data-theme', saved);
+    themeBtn.textContent = saved === 'dark' ? '☀' : '🌙';
+  }
+  themeBtn.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    themeBtn.textContent = next === 'dark' ? '☀' : '🌙';
+    localStorage.setItem('mnTheme', next);
+  });
 
 })();
 </script>
