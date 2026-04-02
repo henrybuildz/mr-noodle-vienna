@@ -11,21 +11,21 @@
   <style>
     /* ── Variables ───────────────────────────────────────────── */
     :root {
-      --bg:        #111111;
-      --bg-mid:    #181818;
-      --bg-card:   #1e1e1e;
-      --bg-card2:  #242424;
+      --bg:        #faf6f0;
+      --bg-mid:    #f3ece0;
+      --bg-card:   #ffffff;
+      --bg-card2:  #f7f2ea;
       --red:       #8b0000;
       --red-lt:    #a50000;
       --red2:      #c0392b;
-      --gold:      #d4a017;
-      --gold-lt:   #e8b520;
-      --gold-dim:  rgba(212,160,23,0.18);
-      --cream:     #f5f0e8;
-      --cream-60:  rgba(245,240,232,0.60);
-      --cream-30:  rgba(245,240,232,0.30);
-      --cream-10:  rgba(245,240,232,0.07);
-      --rule:      rgba(245,240,232,0.08);
+      --gold:      #b8860b;
+      --gold-lt:   #d4a017;
+      --gold-dim:  rgba(184,134,11,0.15);
+      --cream:     #1a1a1a;
+      --cream-60:  rgba(26,26,26,0.60);
+      --cream-30:  rgba(26,26,26,0.35);
+      --cream-10:  rgba(26,26,26,0.06);
+      --rule:      rgba(26,26,26,0.10);
       --font-disp: 'Noto Serif SC', serif;
       --font-body: 'DM Sans', sans-serif;
       --ease:      cubic-bezier(0.25,0.46,0.45,0.94);
@@ -104,7 +104,7 @@
     }
     .steam {
       position: absolute; bottom: 0;
-      width: 6px; background: rgba(245,240,232,0.18);
+      width: 6px; background: rgba(139,0,0,0.15);
       border-radius: 50%;
       filter: blur(4px);
       animation: steamRise var(--dur) ease-in-out var(--del) infinite;
@@ -125,7 +125,7 @@
       border-bottom: 1px solid transparent;
     }
     #navbar.scrolled {
-      background: rgba(17,17,17,0.97);
+      background: rgba(250,246,240,0.97);
       backdrop-filter: blur(12px);
       padding: 0.85rem 0;
       border-bottom-color: var(--rule);
@@ -150,7 +150,7 @@
     .nav-links a:hover { color: var(--cream); }
     .nav-cta {
       font-size: 0.72rem; font-weight: 600;
-      color: var(--cream) !important;
+      color: #fff !important;
       background: var(--red);
       padding: 0.5rem 1.2rem; border-radius: 4px;
       transition: background 0.25s ease !important;
@@ -160,7 +160,7 @@
     .hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; }
     .hamburger span {
       display: block; width: 22px; height: 1.5px;
-      background: var(--cream); border-radius: 2px;
+      background: var(--red); border-radius: 2px;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
     .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
@@ -186,7 +186,7 @@
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden;
-      background: var(--bg);
+      background: linear-gradient(150deg, #fdf8f0 0%, #f5ebe0 50%, #f0e4d0 100%);
     }
     .hero-glow {
       position: absolute; z-index: 0; pointer-events: none;
@@ -195,7 +195,7 @@
     .hero-glow-1 {
       width: 600px; height: 600px;
       top: 50%; left: 50%; transform: translate(-50%, -55%);
-      background: radial-gradient(circle, rgba(139,0,0,0.55) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(139,0,0,0.10) 0%, transparent 70%);
     }
     .hero-glow-2 {
       width: 300px; height: 300px;
@@ -231,7 +231,7 @@
     .btn-red {
       display: inline-flex; align-items: center; gap: 0.4rem;
       font-size: 0.8rem; font-weight: 600;
-      background: var(--red); color: var(--cream);
+      background: var(--red); color: #fff;
       padding: 0.85rem 1.8rem; border-radius: 4px;
       border: 1px solid var(--red);
       transition: background 0.25s ease, transform 0.25s ease;
@@ -265,12 +265,14 @@
       background: var(--bg-card);
       border: 1px solid var(--rule);
       border-radius: 12px; padding: 2rem 1.5rem;
-      transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 12px rgba(26,26,26,0.06);
+      transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     }
     .why-card:hover {
-      border-color: rgba(212,160,23,0.3);
+      border-color: rgba(139,0,0,0.2);
       background: var(--bg-card2);
       transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(26,26,26,0.1);
     }
     .why-icon { font-size: 1.8rem; margin-bottom: 1rem; display: block; }
     .why-card-title {
@@ -352,7 +354,7 @@
     .fav-glow {
       position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
       width: 700px; height: 400px; pointer-events: none;
-      background: radial-gradient(ellipse, rgba(139,0,0,0.18) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(139,0,0,0.06) 0%, transparent 70%);
       filter: blur(60px); z-index: 0;
     }
     .fav-inner { position: relative; z-index: 2; }
@@ -379,10 +381,10 @@
       display: flex; align-items: center; justify-content: center;
       overflow: hidden;
     }
-    .fav-top-duck   { background: linear-gradient(135deg, #3d0c0c 0%, #7a1a1a 100%); }
-    .fav-top-jiaozi { background: linear-gradient(135deg, #1a1a0a 0%, #3d3510 100%); }
-    .fav-top-crispy { background: linear-gradient(135deg, #0d1a0d 0%, #1f3b1f 100%); }
-    .fav-card-emoji { font-size: 3.5rem; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6)); }
+    .fav-top-duck   { background: linear-gradient(135deg, #f5ddd8 0%, #e8b8a8 100%); }
+    .fav-top-jiaozi { background: linear-gradient(135deg, #fdf0d5 0%, #f0d898 100%); }
+    .fav-top-crispy { background: linear-gradient(135deg, #ddeedd 0%, #b8d8b8 100%); }
+    .fav-card-emoji { font-size: 3.5rem; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15)); }
     .fav-card-body { padding: 1.6rem; }
     .fav-card-name {
       font-family: var(--font-disp);
@@ -463,8 +465,8 @@
     .vc-note { font-size: 0.75rem; color: var(--cream-30); margin-top: 0.2rem; font-style: italic; }
     .visit-notice {
       display: inline-block;
-      background: rgba(139,0,0,0.15);
-      border: 1px solid rgba(139,0,0,0.35);
+      background: rgba(139,0,0,0.07);
+      border: 1px solid rgba(139,0,0,0.2);
       color: var(--cream-60); font-size: 0.85rem;
       padding: 0.9rem 1.6rem; border-radius: 6px;
       font-style: italic; line-height: 1.6;
@@ -475,7 +477,7 @@
        8. FOOTER
     ══════════════════════════════════════════════════════════ */
     #footer {
-      background: #0a0a0a;
+      background: var(--bg-mid);
       padding: 3.5rem 0 2rem;
       border-top: 1px solid var(--rule);
     }
